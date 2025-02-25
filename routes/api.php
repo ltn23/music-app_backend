@@ -14,4 +14,6 @@ Route::get('/songs/{id}', [SongController::class, 'show']);
 // Thêm bài hát mới
 Route::post('/songs', [SongController::class, 'store']);
 
-Route::post('/upload-audio', [AudioController::class, 'upload']);
+Route::post('/upload-audio', [AudioController::class, 'uploadAudio']);
+
+Route::post('/upload-image', [AudioController::class, 'uploadImage']);  
